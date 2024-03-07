@@ -28,25 +28,26 @@
     width: 800px;
     height: 600px;
     margin: 15px auto;
-    /* background: var(--color-primary); */
-    /* border: 1px solid var(--color-primary); */
-    /* border-radius: 5px; */
+    background: var(--color-primary);
+    
+    border: 1px solid var(--color-primary);
+    
     /* box-shadow: var(--color-shadows); */
 }
-.container div{
-    /* background: var(--color-secundary); */
-    border-radius: 5px;
+.container div div{
+    border-radius: 10px;
 }
 .item_1{
-    width: 100%;
-    background: violet;
+    background: var(--color-secundary);
+   
+    /* background: violet; */
     grid-area: menu;
     height: 70px;
     
 }
 
 .item_1 div{
-    width: 49.1%;
+    width: 49.7%;
     height: 100%;
     border-radius: 0;
     margin: 0 auto;
@@ -64,11 +65,21 @@
     margin: 15px;
     align-items: center;
 }
-.item_1 div ul li{
+.item_1 div ul li,.item_3 ul li{
     list-style: none;
 }
 .item_1 div ul li i{
     font-size: 26px;
+}
+.campo_busqueda{
+    text-align: left; 
+    position: relative;
+    left: 15px;
+    top: -2px;
+    font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+    font-weight: bold;
+    font-size: 14px; /* Cambia el tamaño del texto */
+    color: black;
 }
 #User i{
     font-size: 40px;
@@ -85,7 +96,9 @@
     background: transparent;
     outline: none;
 }
-
+.item_1__usuario{
+    background: linear-gradient(to right, var(--color-blue), var(--color-green));
+}
 
 .item_1__usuario ul div{
     display: inline-block ;
@@ -97,29 +110,75 @@
     display: inline-block;
     /* background: blue; */
     margin: 10px;
+    
 }
 
-
-button{
+.item_1__menu button{
     background: var(--color-primary);
     border-radius: 5px;
     border: none;
-    
 }
 
 .item_2{
     background: blue;
     grid-area: notification;
+    border-radius: 15px;
 }
 
 .item_3{
-    background: orange;
+    background: var(--color-secundary);
     grid-area: sales;
 }
+.item_3 ul li{
+    margin: 10px 0px 0px 5px ;
+}
+.lista_horizontal{
+    background: red;
+    display: flex;
+}
+.item_3__text1{
+    font-size: 25px;
+    margin: ;
+}
+
 
 .item_4{
-    background: violet;
+    background: var(--color-secundary);
     grid-area: balances;
+    
+}
+
+.item_4 ul div li{
+    list-style: none;
+   
+}
+.item_4 ul div li a{
+    font-size: 70%;
+    
+}
+.item_4__arriba{
+    margin: 10px 20px 0 10px;
+    /* background: yellow; */
+}
+.item_4__abajo{
+   margin: 20px 20px 0 10px;
+    /* background: yellow; */
+}
+.item_4__center{
+    margin: 20px 0 0 4px;
+    background: var(--color-media);
+    width: 93%;
+    height: 40px;
+    position: relative;
+}
+.item_4__center a,.item_4__center h3{
+    margin-left: 10px;
+}
+
+.item_4 ul li a{
+    text-decoration: none;
+    color:var(--color-font);
+    font-size: 80%;
 }
 
 .item_5{
@@ -128,8 +187,69 @@ button{
 }
 
 .item_6{
-    background: darkcyan ;
+    background: var(--color-green) ;
     grid-area: devs;
+    
+    
+}
+.item_6 ul li{
+    list-style: none;
+    /* background: yellow; */
+}
+
+.item_6__hora a {
+    font-size: 60%;
+    text-decoration: none;
+    color:var(--color-font);
+    /* background: red; */
+    position: relative;
+    left: 10px;
+    top: 5px;
+   
+}
+
+.item_6__title h3{
+    font-size: 80%;
+    /* background: blue; */
+    text-decoration: none;
+    color:var(--color-font);
+    position: relative;
+    left: 10px;
+    top: 7px;
+}
+.item_6 li button{
+    font-size: 45%;
+    width: 50px;
+    height: 18px;
+    text-decoration: none;
+    color:var(--color-font);
+    margin: 20px 20px 12px 10px;
+    border: none;
+}
+.item_6__items li{
+    font-size: 30px;
+    text-decoration: none;
+    color:var(--color-font);
+    display: inline-block;
+    /* background: green; */
+}
+
+.item_6__items li p{
+    color: var(--color-primary);
+    font-size: 40%;
+}
+.user{
+    margin: 0 5px 10px 10px;
+}
+.circle{
+    margin: 0 5px 2px -20px; 
+}
+.numero{
+    /* background: red; */
+    position: relative;
+    left: -33px;
+    top: -9px;
+    
 }
 .item_7{
     background: hotpink ;
@@ -159,5 +279,5 @@ button{
 }
 
 .container div{
-    border-radius: 0px;
+    border-radius: 10px;
 }

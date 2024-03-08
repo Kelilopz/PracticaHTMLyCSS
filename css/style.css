@@ -162,7 +162,17 @@
 }
 
 .item_3__valor h1{
-    margin-top: 2  5px;
+    margin-top:  5px;
+}
+
+#item_3__mas {
+    color: var(--color-green);
+}
+.item_3__semana img{
+    width: 37vh;
+    display: flex;
+    font-size: 100px;
+    
 }
 .item_4{
     background: var(--color-secundary);

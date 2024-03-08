@@ -114,7 +114,7 @@
 }
 
 .item_1__menu button{
-    background: var(--color-primary);
+    background: var(--color-secund);
     border-radius: 5px;
     border: none;
 }
@@ -122,7 +122,6 @@
 .item_2{
     background: blue;
     grid-area: notification;
-    border-radius: 15px;
 }
 
 .item_3{
@@ -130,18 +129,41 @@
     grid-area: sales;
 }
 .item_3 ul li{
-    margin: 10px 0px 0px 5px ;
+    margin: 10px 0px 0px 30px ;
 }
 .lista_horizontal{
-    background: red;
+    /* background: red; */
     display: flex;
+    
+}
+
+#yearly{
+    font-size: 150%;
+    margin-top: 25px;
+    color: gray                     ;
+}
+#year {
+    /* background: yellow; */
+    right: 0;
+    position: relative ;
+    left: 230px;
+    border: none;
+    top: 15px;
+    color: gray;
+}
+.item_3 input:focus{
+    outline: none;
 }
 .item_3__text1{
-    font-size: 25px;
-    margin: ;
+    /* background: blue; */
+    font-size: 18px;
+    position: relative;
+    top: 15px;
 }
 
-
+.item_3__valor h1{
+    margin-top: 2  5px;
+}
 .item_4{
     background: var(--color-secundary);
     grid-area: balances;

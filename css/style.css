@@ -135,14 +135,57 @@
 .item_2__punto{
     /* background: violet; */
     font-size: 180%;
-    margin: -20px 0px 0px 150px;
+    margin: -20px 0px 0px 140px;
 }
 .item_2 li h3{
     font-size: 90%;
 }
-.item_2__lineas {
-    transform: skewX(-30deg);
+.contenedor-lineas{
+    display: flex
 }
+.linea-inclinada{
+    width: 9px; /* Ajusta el ancho de la línea según tus necesidades */
+    height: 1px; /* Ajusta el grosor de la línea según tus necesidades */
+    background-color: black; /* Color de la línea */
+    transform: rotate(-30deg); /* Inclina la línea en 60 grados */
+    transform-origin: left top; 
+    
+}
+.item_2__imagenes{
+    display: flex;
+}
+#img_item_2__1,#img_item_2__2,#img_item_2__3,#img_item_2__4{
+    font-size: 240%;
+}
+#item_2__num,#item_2__VC{
+    color: var(--color-secundary);
+}
+#img_item_2__2,#img_item_2__3{
+    margin-left: -30px;
+    
+}
+#img_item_2__2,#img_item_2__1,#img_item_2__3,#img_item_2__4{
+    background: black;
+    border-radius: 100%;
+}
+#img_item_2__4{
+    margin-left:150% ;
+}
+
+#item_2__VC,#item_2__num{
+    margin-top: 50%;
+}
+#item_2__VC{
+    margin-top: 13px;
+    margin-left: -45px;
+    font-size: 60%;
+}
+#item_2__num{
+    margin-top: 13px;
+    margin-left: 12px;
+    font-size: 70%;
+}
+
 .item_3{
     background: var(--color-secundary);
     grid-area: sales;
@@ -236,10 +279,50 @@
 }
 
 .item_5{
-    background: sandybrown;
+    background: var(--color-secundary);
     grid-area: week;
 }
-
+.item_5 li{
+    list-style: none;
+    text-decoration: none;
+}
+.item_5__text1{
+    font-size: 80%;
+    margin: 20px 0px 0px 20px;
+}
+.bxs-bar-chart-alt-2{
+    background: var(--color-green);
+    font-size: 120%;
+    border-radius: 90%;
+    width: 6vh;
+    height: 6vh;
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+    right: -60px;
+    
+    
+}
+.img_item_5{
+    background: var(--color-blue);
+    font-size: 180%;
+    border-radius: 100%;
+    width: 6vh;
+    height: 6vh;
+    position: relative;
+    right: -60px;
+    top: 15px;
+    
+}
+.item_5 h3{
+    font-size: 150%;
+    margin: 5px 0px 0px 20px;
+}
+.item_5 img{
+    width: 220px;
+    height: 80px;
+    margin: 15px 0px 0px 20px;
+}
 .item_6{
     background: var(--color-green) ;
     grid-area: devs;

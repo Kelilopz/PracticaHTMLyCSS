@@ -120,10 +120,29 @@
 }
 
 .item_2{
-    background: blue;
+    background: var(--color-blue);
     grid-area: notification;
 }
 
+.item_2 li{
+    list-style: none;
+    margin: 10px 0px 0px 20px;
+}
+.item_2__hora{
+    font-size: 70%;
+    /* background: yellow; */
+}
+.item_2__punto{
+    /* background: violet; */
+    font-size: 180%;
+    margin: -20px 0px 0px 150px;
+}
+.item_2 li h3{
+    font-size: 90%;
+}
+.item_2__lineas {
+    transform: skewX(-30deg);
+}
 .item_3{
     background: var(--color-secundary);
     grid-area: sales;
@@ -169,10 +188,13 @@
     color: var(--color-green);
 }
 .item_3__semana img{
-    width: 37vh;
-    display: flex;
-    font-size: 100px;
-    
+    width: 350px;
+}
+
+.item_3__date{
+    font-size: 90%;
+    opacity: 60%;
+    text-align: center;
 }
 .item_4{
     background: var(--color-secundary);
@@ -288,8 +310,16 @@
     grid-area: product;
 }
 .item_8{
-    background: yellow ;
+    background: var(--color-secundary);
     grid-area: timeline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_8 img{
+    width: 410px;
+    height: 180px;
 }
 
 @media(width < 800px){

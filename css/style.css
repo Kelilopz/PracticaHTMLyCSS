@@ -389,8 +389,113 @@
     
 }
 .item_7{
-    background: hotpink ;
+    background: var(--color-secundary);
     grid-area: product;
+}
+.item_7 li{
+    list-style: none;
+    text-decoration: none;
+}
+
+#item_7__li1{
+    margin: 30px 0px 0px 20px;
+}
+#item_7__li1 h2{
+    font-size: 120%;
+    font-family: bold;
+}
+
+.interruptor {
+    width: 38px; /* Ancho del interruptor */
+    height: 18px; /* Altura del interruptor */
+    position: relative;
+    margin-left: 35%;
+}
+
+.checkbox {
+    display: none; /* Oculta el checkbox */
+}
+
+.etiqueta {
+    width: 100%; /* Ancho de la etiqueta */
+    height: 100%; /* Altura de la etiqueta */
+    background-color: var(--color-blue); /* Color de fondo del interruptor */
+    display: block;
+    border-radius: 15px; /* Borde redondeado */
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.checkbox:checked + .etiqueta {
+    background-color: var(--color-green); /* Cambia el color de fondo al estar activo */
+}
+
+.etiqueta:before {
+    content: '';
+    width: 18px; /* Ancho del botón deslizante */
+    height: 18px; /* Altura del botón deslizante */
+    background-color: black; /* Color del botón deslizante */
+    display: block;
+    border-radius: 50%; /* Hace que el botón deslizante sea redondo */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px; /* Posición inicial del botón deslizante */
+    transition: left 0.3s; /* Transición suave del movimiento */
+}
+
+.checkbox:checked + .etiqueta:before {
+    left: calc(100% - 20px); /* Posición del botón deslizante cuando el interruptor está activo */
+}
+.item_7__hora{
+    margin: 10px 0px 0px 20px;
+    font-size: 90%;
+}
+#item_7_li2{
+    font-size: 70%;
+    margin: 15px 0px 0px 20px;
+    text-align: center;
+    height: 28px; /* Altura del elemento <p>, ajusta según sea necesario */
+    line-height: 28px;
+    
+}
+.item_7__coder{
+    background: rgba(255,254,145,255); 
+    width: 50px;
+    border-radius: 5px;
+}
+
+.item_7__metting{
+    margin-left: 3%;
+    background: var(--color-green);
+    width: 70px;
+    border-radius: 5px;
+}
+.item_7 li i{
+    font-size: 280%;
+    margin-top: 10px ;
+}
+#img_item_7__1{
+    margin: 10px 0px 0px 20px;
+}
+#img_item_7__2, #img_item_7__3{
+    margin-left: -15px;
+}
+#item_7__num{
+    font-size: 90%;
+    color: var(--color-primary);
+    margin: 22px 0px 0px -30px;
+}
+#pencil{
+    background: red;
+    height: 20px;
+    width: 20px;
+    font-size: 120%;
+    margin: 28px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 100%;
 }
 .item_8{
     background: var(--color-secundary);
@@ -399,7 +504,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .item_8 img{
     width: 410px;
     height: 180px;

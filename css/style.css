@@ -38,6 +38,7 @@
     border-radius: 10px;
 }
 .item_1{
+    
     background: var(--color-secundary);
    
     /* background: violet; */
@@ -319,15 +320,13 @@
     margin: 5px 0px 0px 20px;
 }
 .item_5 img{
-    width: 220px;
-    height: 80px;
+    width: 80%;
+    height: 80%;
     margin: 15px 0px 0px 20px;
 }
 .item_6{
     background: var(--color-green) ;
     grid-area: devs;
-    
-    
 }
 .item_6 ul li{
     list-style: none;
@@ -448,6 +447,7 @@
 .checkbox:checked + .etiqueta:before {
     left: calc(100% - 20px); /* Posición del botón deslizante cuando el interruptor está activo */
 }
+
 .item_7__hora{
     margin: 10px 0px 0px 20px;
     font-size: 90%;
@@ -488,6 +488,7 @@
     margin: 22px 0px 0px -30px;
 }
 #pencil{
+    display: flex;
     position: relative;
     font-size: 120%;
     margin: 15px auto;
@@ -498,6 +499,7 @@
 
 }
 #arrow{
+    display: flex;
     margin-right:26px ;
     background: var(--color-green);
     border-radius: 100%;
@@ -532,6 +534,42 @@
         "product"
         "notification"
         "timeline";
+    }
+    .item_1{
+        height: 50%;
+    }
+    .item_1 div{  
+       display: flex;
+       width: 100%;
+       /* background: violet; */
+    }
+    .item_1__menu {
+        display: flex;
+        /* background: blue; */
+    }
+    .item_1__menu ul {
+        display: flex;
+        
+    }
+    .item_1__usuario{
+        display: flex;
+        grid-area: "abajo";
+        
+
+    }
+    .item_1__usuario ul {
+        
+        display: flex;
+        width: 350px;
+    }
+    #user{
+        margin-left: 10px;
+    }
+    .item_1__menu button{
+        background: var(--color-secund);
+        border-radius: 5px;
+        border: none;
+        display: flex;
     }
 }
 
